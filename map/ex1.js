@@ -22,6 +22,13 @@ En sortie: [
  */
 
 function getStringsLength(strings) {
+  strings= strings.map(function(string) {
+    const size = string.length;
+    return `${string} contains ${size} characters`;
+  }
+  );
+
+  return strings
 }
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,

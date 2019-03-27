@@ -39,7 +39,12 @@ Exemple d'entrée:
  */
 
 function searchWordFilter(items, search) {
+  return items.filter(function(item){
+    return item.toLowerCase().includes(search.toLowerCase())
+  })
 }
 
+//fontion searchworldfiler ( 2 parametres Items et search)
+// On veux filtrer tout les items qui contiennent 'revenge'(search) en minuscule
 // Ne pas modifier l'export
 module.exports = searchWordFilter;
